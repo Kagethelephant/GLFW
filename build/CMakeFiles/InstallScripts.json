@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/kage/Repos/GLFW/build/cmake_install.cmake",
+		"/home/kage/Repos/GLFW/build/lib/glfw/cmake_install.cmake",
+		"/home/kage/Repos/GLFW/build/lib/glfw/src/cmake_install.cmake",
+		"/home/kage/Repos/GLFW/build/lib/glfw/docs/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
