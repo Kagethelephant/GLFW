@@ -1,7 +1,8 @@
 CMakeFiles/gl.dir/src/app/glObject.cpp.o: \
  /home/kage/Repos/GLFW/src/app/glObject.cpp /usr/include/stdc-predef.h \
  /home/kage/Repos/GLFW/src/app/glObject.hpp \
- /usr/include/c++/15.2.1/cstddef \
+ /home/kage/Repos/GLFW/src/utils/matrix.hpp /usr/include/c++/15.2.1/cmath \
+ /usr/include/c++/15.2.1/bits/requires_hosted.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -9,21 +10,11 @@ CMakeFiles/gl.dir/src/app/glObject.cpp.o: \
  /usr/include/sys/cdefs.h /usr/include/bits/long-double.h \
  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
- /usr/include/c++/15.2.1/bits/version.h \
- /home/kage/Repos/GLFW/lib/glad/include/glad/glad.h \
- /home/kage/Repos/GLFW/lib/glad/include/KHR/khrplatform.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/libc-header-start.h \
- /usr/include/bits/types.h /usr/include/bits/typesizes.h \
- /usr/include/bits/time64.h /usr/include/bits/wchar.h \
- /usr/include/bits/stdint-intn.h /usr/include/bits/stdint-uintn.h \
- /usr/include/bits/stdint-least.h /usr/include/GL/gl.h \
- /home/kage/Repos/GLFW/lib/glfw/include/GLFW/glfw3.h \
- /usr/include/c++/15.2.1/math.h /usr/include/c++/15.2.1/cmath \
- /usr/include/c++/15.2.1/bits/requires_hosted.h \
  /usr/include/c++/15.2.1/bits/cpp_type_traits.h \
+ /usr/include/c++/15.2.1/bits/version.h \
  /usr/include/c++/15.2.1/ext/type_traits.h /usr/include/math.h \
+ /usr/include/bits/libc-header-start.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/bits/time64.h \
  /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
  /usr/include/bits/floatn.h /usr/include/bits/floatn-common.h \
  /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
@@ -31,11 +22,13 @@ CMakeFiles/gl.dir/src/app/glObject.cpp.o: \
  /usr/include/bits/mathcalls-helper-functions.h \
  /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
  /usr/include/bits/iscanonical.h /usr/include/c++/15.2.1/bits/std_abs.h \
- /usr/include/stdlib.h /usr/include/bits/waitflags.h \
- /usr/include/bits/waitstatus.h /usr/include/bits/types/locale_t.h \
- /usr/include/bits/types/__locale_t.h /usr/include/sys/types.h \
- /usr/include/bits/types/clock_t.h /usr/include/bits/types/clockid_t.h \
- /usr/include/bits/types/time_t.h /usr/include/bits/types/timer_t.h \
+ /usr/include/stdlib.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stddef.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
+ /usr/include/sys/types.h /usr/include/bits/types/clock_t.h \
+ /usr/include/bits/types/clockid_t.h /usr/include/bits/types/time_t.h \
+ /usr/include/bits/types/timer_t.h /usr/include/bits/stdint-intn.h \
  /usr/include/endian.h /usr/include/bits/endian.h \
  /usr/include/bits/endianness.h /usr/include/bits/byteswap.h \
  /usr/include/bits/uintn-identity.h /usr/include/sys/select.h \
@@ -47,7 +40,14 @@ CMakeFiles/gl.dir/src/app/glObject.cpp.o: \
  /usr/include/bits/pthreadtypes-arch.h \
  /usr/include/bits/atomic_wide_counter.h /usr/include/bits/struct_mutex.h \
  /usr/include/bits/struct_rwlock.h /usr/include/alloca.h \
- /usr/include/bits/stdlib-float.h /usr/include/c++/15.2.1/string \
+ /usr/include/bits/stdlib-float.h /usr/include/c++/15.2.1/cstddef \
+ /home/kage/Repos/GLFW/lib/glad/include/glad/glad.h \
+ /home/kage/Repos/GLFW/lib/glad/include/KHR/khrplatform.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/include/stdint.h \
+ /usr/include/stdint.h /usr/include/bits/wchar.h \
+ /usr/include/bits/stdint-uintn.h /usr/include/bits/stdint-least.h \
+ /usr/include/GL/gl.h /home/kage/Repos/GLFW/lib/glfw/include/GLFW/glfw3.h \
+ /usr/include/c++/15.2.1/math.h /usr/include/c++/15.2.1/string \
  /usr/include/c++/15.2.1/bits/stringfwd.h \
  /usr/include/c++/15.2.1/bits/memoryfwd.h \
  /usr/include/c++/15.2.1/bits/char_traits.h \
@@ -155,4 +155,9 @@ CMakeFiles/gl.dir/src/app/glObject.cpp.o: \
  /usr/include/c++/15.2.1/bits/locale_facets.tcc \
  /usr/include/c++/15.2.1/bits/basic_ios.tcc \
  /usr/include/c++/15.2.1/bits/ostream.tcc /usr/include/c++/15.2.1/istream \
- /usr/include/c++/15.2.1/bits/istream.tcc
+ /usr/include/c++/15.2.1/bits/istream.tcc /usr/include/c++/15.2.1/fstream \
+ /usr/include/c++/15.2.1/bits/codecvt.h \
+ /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
+ /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
+ /usr/include/c++/15.2.1/bits/fstream.tcc /usr/include/c++/15.2.1/sstream \
+ /usr/include/c++/15.2.1/bits/sstream.tcc

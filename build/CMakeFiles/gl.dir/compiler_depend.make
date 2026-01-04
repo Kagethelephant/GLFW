@@ -296,6 +296,7 @@ CMakeFiles/gl.dir/src/app/glObject.cpp.o: /home/kage/Repos/GLFW/src/app/glObject
   /home/kage/Repos/GLFW/lib/glad/include/glad/glad.h \
   /home/kage/Repos/GLFW/lib/glfw/include/GLFW/glfw3.h \
   /home/kage/Repos/GLFW/src/app/glObject.hpp \
+  /home/kage/Repos/GLFW/src/utils/matrix.hpp \
   /usr/include/GL/gl.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
@@ -390,6 +391,7 @@ CMakeFiles/gl.dir/src/app/glObject.cpp.o: /home/kage/Repos/GLFW/src/app/glObject
   /usr/include/c++/15.2.1/bits/basic_string.tcc \
   /usr/include/c++/15.2.1/bits/char_traits.h \
   /usr/include/c++/15.2.1/bits/charconv.h \
+  /usr/include/c++/15.2.1/bits/codecvt.h \
   /usr/include/c++/15.2.1/bits/concept_check.h \
   /usr/include/c++/15.2.1/bits/cpp_type_traits.h \
   /usr/include/c++/15.2.1/bits/cxxabi_forced.h \
@@ -397,6 +399,7 @@ CMakeFiles/gl.dir/src/app/glObject.cpp.o: /home/kage/Repos/GLFW/src/app/glObject
   /usr/include/c++/15.2.1/bits/exception.h \
   /usr/include/c++/15.2.1/bits/exception_defines.h \
   /usr/include/c++/15.2.1/bits/exception_ptr.h \
+  /usr/include/c++/15.2.1/bits/fstream.tcc \
   /usr/include/c++/15.2.1/bits/functexcept.h \
   /usr/include/c++/15.2.1/bits/functional_hash.h \
   /usr/include/c++/15.2.1/bits/hash_bytes.h \
@@ -421,6 +424,7 @@ CMakeFiles/gl.dir/src/app/glObject.cpp.o: /home/kage/Repos/GLFW/src/app/glObject
   /usr/include/c++/15.2.1/bits/range_access.h \
   /usr/include/c++/15.2.1/bits/refwrap.h \
   /usr/include/c++/15.2.1/bits/requires_hosted.h \
+  /usr/include/c++/15.2.1/bits/sstream.tcc \
   /usr/include/c++/15.2.1/bits/std_abs.h \
   /usr/include/c++/15.2.1/bits/stl_algobase.h \
   /usr/include/c++/15.2.1/bits/stl_bvector.h \
@@ -456,6 +460,7 @@ CMakeFiles/gl.dir/src/app/glObject.cpp.o: /home/kage/Repos/GLFW/src/app/glObject
   /usr/include/c++/15.2.1/ext/numeric_traits.h \
   /usr/include/c++/15.2.1/ext/string_conversions.h \
   /usr/include/c++/15.2.1/ext/type_traits.h \
+  /usr/include/c++/15.2.1/fstream \
   /usr/include/c++/15.2.1/initializer_list \
   /usr/include/c++/15.2.1/ios \
   /usr/include/c++/15.2.1/iosfwd \
@@ -464,6 +469,7 @@ CMakeFiles/gl.dir/src/app/glObject.cpp.o: /home/kage/Repos/GLFW/src/app/glObject
   /usr/include/c++/15.2.1/math.h \
   /usr/include/c++/15.2.1/new \
   /usr/include/c++/15.2.1/ostream \
+  /usr/include/c++/15.2.1/sstream \
   /usr/include/c++/15.2.1/stdexcept \
   /usr/include/c++/15.2.1/streambuf \
   /usr/include/c++/15.2.1/string \
@@ -472,8 +478,10 @@ CMakeFiles/gl.dir/src/app/glObject.cpp.o: /home/kage/Repos/GLFW/src/app/glObject
   /usr/include/c++/15.2.1/typeinfo \
   /usr/include/c++/15.2.1/vector \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
+  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/basic_file.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
+  /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++io.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/c++locale.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
   /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/ctype_base.h \
@@ -519,6 +527,7 @@ CMakeFiles/gl.dir/src/app/main.cpp.o: /home/kage/Repos/GLFW/src/app/main.cpp \
   /home/kage/Repos/GLFW/lib/glfw/include/GLFW/glfw3.h \
   /home/kage/Repos/GLFW/src/app/gl.hpp \
   /home/kage/Repos/GLFW/src/app/glObject.hpp \
+  /home/kage/Repos/GLFW/src/utils/matrix.hpp \
   /usr/include/GL/gl.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
@@ -1077,8 +1086,6 @@ lib/glfw/src/libglfw3.a:
 
 CMakeFiles/gl.dir/src/utils/data.cpp.o:
 
-CMakeFiles/gl.dir/src/app/main.cpp.o:
-
 CMakeFiles/gl.dir/src/app/gl.cpp.o:
 
 CMakeFiles/gl.dir/lib/glad/src/glad.c.o:
@@ -1098,6 +1105,10 @@ CMakeFiles/gl.dir/lib/glad/src/glad.c.o:
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtendS.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.2.1/crtbeginS.o:
+
+/usr/lib/libm.so:
+
+/usr/lib/libgcc_s.so.1:
 
 /usr/include/c++/15.2.1/bits/cxxabi_init_exception.h:
 
@@ -1336,6 +1347,8 @@ CMakeFiles/gl.dir/src/utils/matrix.cpp.o:
 /usr/include/bits/types/__locale_t.h:
 
 /usr/include/c++/15.2.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
+
+/usr/include/c++/15.2.1/bits/sstream.tcc:
 
 /usr/include/c++/15.2.1/bits/basic_string.h:
 
@@ -1581,6 +1594,10 @@ CMakeFiles/gl.dir/src/app/glObject.cpp.o:
 
 /usr/include/c++/15.2.1/bits/stl_uninitialized.h:
 
+CMakeFiles/gl.dir/src/app/main.cpp.o:
+
+/usr/include/c++/15.2.1/sstream:
+
 /usr/include/features.h:
 
 /usr/include/bits/types/__FILE.h:
@@ -1618,7 +1635,3 @@ CMakeFiles/gl.dir/src/app/glObject.cpp.o:
 /usr/include/c++/15.2.1/cstddef:
 
 /usr/lib/libgcc_s.so:
-
-/usr/lib/libgcc_s.so.1:
-
-/usr/lib/libm.so:

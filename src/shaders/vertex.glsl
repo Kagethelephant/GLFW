@@ -1,8 +1,18 @@
 #version 450 core
 layout (location = 0) in vec3 aPos;
-// out vec4 vertexColor;
-// vertexColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);
+layout (location = 1) in vec2 aTex;
+
+out vec3 fragPos;
+out vec2 TexCoord;
+
+uniform mat4x4 transform;
+uniform mat4x4 scale;
+uniform mat4x4 view;
+uniform mat4x4 project;
+
 void main()
 {
-   gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);
+   TexCoord = aTex;
+   fragPos = vec3(view * transform * scale * vec4(aPos, 1.0f));
+   gl_Position = project * view * transform * scale * vec4(aPos, 1.0f);
 }

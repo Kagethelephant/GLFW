@@ -1,0 +1,29 @@
+# CCW cube with shared vertices
+# Centered at origin, size 1
+v -0.5 -0.5 -0.5
+v  0.5 -0.5 -0.5
+v  0.5  0.5 -0.5
+v -0.5  0.5 -0.5
+v -0.5 -0.5  0.5
+v  0.5 -0.5  0.5
+v  0.5  0.5  0.5
+v -0.5  0.5  0.5
+# Faces (triangles, CCW)
+# front (+Z)
+f 5 6 7
+f 7 8 5
+# back (-Z)
+f 2 1 4
+f 4 3 2
+# left (-X)
+f 1 5 8
+f 8 4 1
+# right (+X)
+f 6 2 3
+f 3 7 6
+# top (+Y)
+f 4 8 7
+f 7 3 4
+# bottom (-Y)
+f 1 2 6
+f 6 5 1

@@ -15,6 +15,8 @@ add_subdirectory(lib/glfw)
 set(SOURCE_FILES
    lib/glad/src/glad.c
    src/app/main.cpp
+   src/app/gl.cpp
+   src/app/glObject.cpp
    src/utils/random.cpp
    src/utils/data.cpp
    src/utils/matrix.cpp)
@@ -25,6 +27,7 @@ add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 # Include other include directories for header files
 target_include_directories(${PROJECT_NAME} PRIVATE 
    ${CMAKE_SOURCE_DIR}/src
+   ${CMAKE_SOURCE_DIR}/src/app
    ${CMAKE_SOURCE_DIR}/lib
    ${CMAKE_SOURCE_DIR}/lib/glad/include)
 
